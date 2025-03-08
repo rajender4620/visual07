@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/logo_Viky.png" type="image/x-icon" style="width: 100px; height: 100px;">
+    <title>Visual07</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+</head>
+
+<body class="bacground-sec">
+    <header class="main-header">
+        <div class="header-contacts">
+            <ul>
+                <li>
+                    <a href="mailto:info@minds-studio.in" class="maillink">
+                        <span><i class="fa fa-envelope"></i> :</span> info@minds-studio.in
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <a class="logo-holder" href=""><img src="assets/logo_Viky.png" alt=""></a>
+    
+        <!-- Mobile nav button -->
+        <div class="nav-button-wrap">
+            <div class="nav-button vis-main-menu" id="mobile-nav-toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <!-- Mobile nav end -->
+    
+        <!-- Navigation bar -->
+        <div class="nav-bar" id="nav-menu">
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="activate">Home </a></li>
+                    <li><a href="about-us.html" class="activate">About </a></li>
+                    <li><a href="project.html" class="activate">Projects </a></li>
+                    <li><a href="services.html" class="activate">Services </a></li>
+                    <li><a href="" class="activate">Contact </a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <footer class="fixed-footer">
+        <div class="footer-social">
+            <ul>
+                <li class="paddingli"><a href="#" target="_blank"><i class="fa fa-facebook"></i><span class="socialmedia2">facebook</span></a></li>
+                <li class="paddingli"><a href="#" target="_blank"><i class="fa fa-linkedin"></i><span class="socialmedia2">LinkedIn</span></a></li>
+                <li class="paddingli"><a href="#" target="_blank"><i class="fa fa-twitter"></i><span class="socialmedia2">twitter</span></a></li>
+                <li class="paddingli"><a href="#" target="_blank"><i class="fa fa-instagram"></i><span class="socialmedia2">instagram</span></a></li>
+                <li class="paddingli"><a href="#" target="_blank"><i class="fa fa-pinterest"></i><span class="socialmedia2">pinterest</span></a></li>
+            </ul>
+        </div>
+        <div class="policy-box">
+            <span>&#169; Minds-Studio 2025 - All rights reserved. </span>
+        </div>
+    </footer>
+    <script>
+        document.getElementById("mobile-nav-toggle").addEventListener("click", function () {
+            document.getElementById("nav-menu").classList.toggle("show-menu");
+        });
+    </script>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let currentPage = window.location.pathname.split("/").pop(); // Get current page filename
+            let menuLinks = document.querySelectorAll(".nav-bar ul li a");
+    
+            menuLinks.forEach(link => {
+                if (link.getAttribute("href") === currentPage) {
+                    link.classList.add("activate"); // Add activate class to the selected page
+                }
+            });
+        });
+    </script>
+</body>
+</html>

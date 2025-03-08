@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/logo_Viky.png" type="image/x-icon" style="width: 100px; height: 100px;">
+    <title>Visual07</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+</head>
+
+<body class="bacground-sec">
+    <header class="main-header">
+        <div class="header-contacts">
+            <ul>
+                <li>
+                    <a href="mailto:info@minds-studio.in" class="maillink">
+                        <span><i class="fa fa-envelope"></i> :</span> info@minds-studio.in
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <a class="logo-holder" href=""><img src="assets/logo_Viky.png" alt=""></a>
+
+        <!-- Mobile nav button -->
+        <div class="nav-button-wrap">
+            <div class="nav-button vis-main-menu" id="mobile-nav-toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <!-- Mobile nav end -->
+
+        <!-- Navigation bar -->
+        <div class="nav-bar" id="nav-menu">
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="activate">Home </a></li>
+                    <li><a href="about-us.html" class="activate">About </a></li>
+                    <li><a href="project.html" class="activate">Projects </a></li>
+                    <li><a href="services.html" class="activate">Services </a></li>
+                    <li><a href="contact.html" class="activate">Contact </a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div>
+        <div class="column-wrap p-0">
+            <section class="py-3">
+                <div class="container">
+                    <div class="section-title">
+                        <h3 class="m-0 p-0 content-about">About us</h3>
+                    </div>
+                    <div class="text-container fl-wrap">
+                        <p class="text-justify">Welcome to Visual70, where creativity meets innovation to shape powerful
+                            visual experiences. We are a dynamic creative studio dedicated to delivering high-quality,
+                            impactful, and visually stunning content across multiple platforms. Whether it's branding,
+                            animation, video production, UI/UX design, photography, or digital storytelling, our goal is
+                            to bring ideas to life with originality and precision.</p>
+
+                        <p class="text-justify">At Visual70, we believe that design is more than aesthetics—it’s about
+                            storytelling, engagement, and making a lasting impression. We collaborate with brands,
+                            businesses, and visionaries to craft compelling narratives that connect with audiences. With
+                            a team of highly skilled professionals, we merge artistry with cutting-edge technology to
+                            create solutions that inspire and elevate brands to new heights.</p>
+
+                        <p class="text-justify">Our approach is rooted in creativity, innovation, and excellence. Every
+                            project we undertake is a fusion of strategic thinking and artistic expression, ensuring
+                            that our clients receive work that is not only visually stunning but also meaningful and
+                            effective.</p>
+
+                        <p class="text-justify">Whether you're a startup looking to establish a strong visual identity,
+                            a brand aiming to enhance its digital presence, or a company seeking innovative multimedia
+                            solutions, Visual70 is here to turn your vision into reality.</p>
+                        <div class="section-title">
+                            <h3 class="m-0 p-0 content-about">Our Vision</h3>
+                        </div>
+                        <div class="">
+                            <p class="text-justify">
+                                To be a globally recognized creative studio that redefines visual storytelling through
+                                innovation, technology, and artistic excellence. We strive to push creative boundaries,
+                                inspire audiences, and set new benchmarks in the world of digital media and design.
+                            </p>
+                        </div>
+                        <div class="section-title">
+                            <h3 class="m-0 p-0 content-about">Our Vision</h3>
+                        </div>
+                        <div class="">
+                            <ul class="ulist">
+                                <li>To empower brands and individuals by crafting visually compelling and emotionally
+                                    engaging content.</li>
+                                <li>To blend creativity with technology, ensuring each project stands out in quality,
+                                    innovation, and impact.</li>
+                                <li>To collaborate and build long-term partnerships, offering tailored solutions that
+                                    help
+                                    businesses grow and succeed.</li>
+                                <li>To constantly evolve and embrace new trends, ensuring our work remains fresh,
+                                    relevant,
+                                    and ahead of the curve.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="fixed-column">
+                    <img src="assets/image1.jpg" alt="" />
+                </div>
+            </section>
+        </div>
+    </div>
+    <footer class="fixed-footer">
+        <div class="footer-social">
+            <ul>
+                <li class="paddingli"><a href="#" target="_blank"><i class="fa fa-facebook"></i><span
+                            class="socialmedia2">facebook</span></a></li>
+                <li class="paddingli"><a href="#" target="_blank"><i class="fa fa-linkedin"></i><span
+                            class="socialmedia2">LinkedIn</span></a></li>
+                <li class="paddingli"><a href="#" target="_blank"><i class="fa fa-twitter"></i><span
+                            class="socialmedia2">twitter</span></a></li>
+                <li class="paddingli"><a href="#" target="_blank"><i class="fa fa-instagram"></i><span
+                            class="socialmedia2">instagram</span></a></li>
+                <li class="paddingli"><a href="#" target="_blank"><i class="fa fa-pinterest"></i><span
+                            class="socialmedia2">pinterest</span></a></li>
+            </ul>
+        </div>
+        <div class="policy-box">
+            <span>&#169; Minds-Studio 2025 - All rights reserved. </span>
+        </div>
+    </footer>
+    <script>
+        document.getElementById("mobile-nav-toggle").addEventListener("click", function () {
+            document.getElementById("nav-menu").classList.toggle("show-menu");
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let currentPage = window.location.pathname.split("/").pop(); // Get current page filename
+            let menuLinks = document.querySelectorAll(".nav-bar ul li a");
+
+            menuLinks.forEach(link => {
+                if (link.getAttribute("href") === currentPage) {
+                    link.classList.add("activate"); // Add activate class to the selected page
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

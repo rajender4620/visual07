@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/logo_Viky.png" type="image/x-icon" style="width: 100px; height: 100px;">
+    <title>Visual07</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+</head>
+
+<body class="bacground-sec">
+    <header class="main-header">
+        <div class="header-contacts">
+            <ul>
+                <li>
+                    <a href="mailto:info@minds-studio.in" class="maillink">
+                        <span><i class="fa fa-envelope"></i> :</span> info@minds-studio.in
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <a class="logo-holder" href=""><img src="assets/logo_Viky.png" alt=""></a>
+
+        <!-- Mobile nav button -->
+        <div class="nav-button-wrap">
+            <div class="nav-button vis-main-menu" id="mobile-nav-toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <!-- Mobile nav end -->
+
+        <!-- Navigation bar -->
+        <div class="nav-bar" id="nav-menu">
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="activate">Home </a></li>
+                    <li><a href="about-us.html" class="activate">About </a></li>
+                    <li><a href="project.html" class="activate">Projects </a></li>
+                    <li><a href="services.html" class="activate">Services </a></li>
+                    <li><a href="" class="activate">Contact </a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <div id="wrapper" class="fullsceen-wrap">
+        <div class="content">
+            <div class="column-wrap pt-2 columnwrap">
+                <section class="p-0 m-0">
+                    <div class="container">
+                        <div class="section-title">
+                            <h3 class="m-0 p-0 content-about">Get in touch</h3>
+                        </div>
+                        <div class="text-container fl-wrap">
+                            <p>If you’d like to meet, or simply have a chat about our VFX outsourcing, don’t hesitate to
+                                contact us for a demonstration or a free test drive. And discover how Minds Studio is
+                                all about creating the best picture for everyone.</p>
+                            <div class="contact-details fl-wrap mt-0">
+                                <ul class="uderlist">
+                                    <li><span class="mail">Mail :
+                                        </span><br>
+                                        <a href="mailto:info@minds-studio.in" target="_blank">
+                                            info@visual.in</a>
+                                    </li>
+                                    <li><span class="mail">Adress :</span>
+                                        <br>
+                                        checkpost
+                                        Hyderabad-500040
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fixed-column">
+                        <div class="section-title">
+                            <h3 class="m-0 p-0 content-about">Write us</h3>
+                        </div>
+                        <div class="container3">
+                            <form>
+                                <div class="form-group">
+                                    <input type="text" placeholder="Name" class="field">
+                                    <input type="email" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" placeholder="Mobile" class="field">
+                                    <input type="text" placeholder="Subject">
+                                </div>
+                                <textarea class="form-control" rows="5" placeholder="Message"></textarea>
+                                <button type="submit" class="btn">SEND MESSAGE</button>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <footer class="fixed-footer">
+        <div class="footer-social">
+            <ul>
+                <li class="paddingli"><a href="#" target="_blank"><i class="fa fa-facebook"></i><span
+                            class="socialmedia2">facebook</span></a></li>
+                <li class="paddingli"><a href="#" target="_blank"><i class="fa fa-linkedin"></i><span
+                            class="socialmedia2">LinkedIn</span></a></li>
+                <li class="paddingli"><a href="#" target="_blank"><i class="fa fa-twitter"></i><span
+                            class="socialmedia2">twitter</span></a></li>
+                <li class="paddingli"><a href="#" target="_blank"><i class="fa fa-instagram"></i><span
+                            class="socialmedia2">instagram</span></a></li>
+                <li class="paddingli"><a href="#" target="_blank"><i class="fa fa-pinterest"></i><span
+                            class="socialmedia2">pinterest</span></a></li>
+            </ul>
+        </div>
+        <div class="policy-box">
+            <span>&#169; Minds-Studio 2025 - All rights reserved. </span>
+        </div>
+    </footer>
+    <script>
+        document.getElementById("mobile-nav-toggle").addEventListener("click", function () {
+            document.getElementById("nav-menu").classList.toggle("show-menu");
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let currentPage = window.location.pathname.split("/").pop(); // Get current page filename
+            let menuLinks = document.querySelectorAll(".nav-bar ul li a");
+
+            menuLinks.forEach(link => {
+                if (link.getAttribute("href") === currentPage) {
+                    link.classList.add("activate"); // Add activate class to the selected page
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

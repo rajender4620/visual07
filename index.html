@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/logo_Viky.png" type="image/x-icon" style="width: 100px; height: 100px;">
+    <title>Visual07</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+</head>
+
+<body class="bacground-sec">
+    <header class="main-header">
+        <div class="header-contacts">
+            <ul>
+                <li>
+                    <a href="mailto:info@minds-studio.in" class="maillink">
+                        <span><i class="fa fa-envelope"></i> :</span> info@minds-studio.in
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <a class="logo-holder" href=""><img src="assets/logo_Viky.png" alt=""></a>
+    
+        <!-- Mobile nav button -->
+        <div class="nav-button-wrap">
+            <div class="nav-button vis-main-menu" id="mobile-nav-toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <!-- Mobile nav end -->
+    
+        <!-- Navigation bar -->
+        <div class="nav-bar" id="nav-menu">
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="activate">Home </a></li>
+                    <li><a href="about-us.html" class="activate">About </a></li>
+                    <li><a href="project.html" class="activate">Projects </a></li>
+                    <li><a href="services.html" class="activate">Services </a></li>
+                    <li><a href="contact.html" class="activate">Contact </a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <div id="wrapper" class="fullsceen-wrap">
+        <div class="content full-height">
+            <div class="center-carousel lightgallery" data-looped="1" data-cen="1" data-loopcar="1">
+                <div class="swiper-container" style="cursor: grab;">
+                    <div class="swiper-wrapper"
+                        style="transform: translate3d(-4264px, 0px, 0px); transition-duration: 0ms;">
+                        <!-- swiper-slide-->
+                        <div class="swiper-slide">
+                            <img src="assets/image1.jpg" alt="Pushpa 2- The Rule">
+                            <!-- <div class="thumb-info">
+                                <h3>Pushpa 2 - The Rule</h3>
+                            </div> -->
+                        </div>
+                        <!-- swiper-slide end-->
+                        <!-- swiper-slide-->
+                        <div class="swiper-slide">
+                            <img src="assets/image1.jpg" alt="Bhaje Vaayu Vegam">
+                            <!-- <div class="thumb-info">
+                                <h3>Bhaje Vaayu Vegam</h3>
+                            </div> -->
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="assets/image1.jpg" alt="Ashram">
+                            <div class="thumb-info">
+                                <h3>Aashram</h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/image1.jpg" alt="lovecraft country">
+                            <div class="thumb-info">
+                                <h3>Lovecraft Country</h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/image1.jpg" alt="Legacy Monsters">
+                            <div class="thumb-info">
+                                <h3>Legacy Monsters</h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/image1.jpg" alt="Shreekakulam Sherlock Homes">
+                            <div class="thumb-info">
+                                <h3>Shreekakulam Sherlock Homes</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination swiper-pagination-bullets"></div>
+                    <div class="sw-button swiper-button-next button-arrow"><i class="fa fa-angle-right rightarrow"></i>
+                    </div>
+                    <div class="sw-button swiper-button-prev prev-button"><i class="fa fa-angle-left leftarrow"></i>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="fixed-footer">
+        <div class="footer-social">
+            <ul>
+                <li class="paddingli"><a href="#" target="_blank"><i class="fa fa-facebook"></i><span class="socialmedia2">facebook</span></a></li>
+                <li class="paddingli"><a href="#" target="_blank"><i class="fa fa-linkedin"></i><span class="socialmedia2">LinkedIn</span></a></li>
+                <li class="paddingli"><a href="#" target="_blank"><i class="fa fa-twitter"></i><span class="socialmedia2">twitter</span></a></li>
+                <li class="paddingli"><a href="#" target="_blank"><i class="fa fa-instagram"></i><span class="socialmedia2">instagram</span></a></li>
+                <li class="paddingli"><a href="#" target="_blank"><i class="fa fa-pinterest"></i><span class="socialmedia2">pinterest</span></a></li>
+            </ul>
+        </div>
+        <div class="policy-box">
+            <span>&#169; Minds-Studio 2025 - All rights reserved. </span>
+        </div>
+    </footer>
+    <!--=============== scripts  ===============-->
+    <script type="text/javascript" src="https://www.minds-studio.in/assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="https://www.minds-studio.in/assets/js/plugins.js"></script>
+    <script type="text/javascript" src="https://www.minds-studio.in/assets/js/scripts.js"></script>
+
+    <script src='js/jquery.min.js'></script>
+    <!-- Bootstrap js-->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Bootsnav js -->
+    <script src="js/bootsnav.js"></script>
+    <script src="js/owl-carousel.min.js"></script>
+    <!-- <script src="js/bootstrap.script.js.js"></script>
+    <script src="js/bootstrap.plugin.js.js"></script> -->
+    <script>
+        document.getElementById("mobile-nav-toggle").addEventListener("click", function () {
+            document.getElementById("nav-menu").classList.toggle("show-menu");
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let currentPage = window.location.pathname.split("/").pop(); // Get current page filename
+            let menuLinks = document.querySelectorAll(".nav-bar ul li a");
+    
+            menuLinks.forEach(link => {
+                if (link.getAttribute("href") === currentPage) {
+                    link.classList.add("activate"); // Add activate class to the selected page
+                }
+            });
+        });
+    </script>
+    
+</body>
+
+</html>
