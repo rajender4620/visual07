@@ -385,6 +385,7 @@ footer.fixed-footer {
     width: 50%;
     right: 0;
     -webkit-transform: translate3d(0, 0, 0);
+    padding: 10px;
 }
 
 .row-wrap,
@@ -829,12 +830,6 @@ h2 {
     margin-right: 10px;
 }
 
-.both{
-    display: flex
-;
-    align-items: center;
-    justify-content: space-between;
-}
 
 
 
