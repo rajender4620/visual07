@@ -192,20 +192,20 @@ ul {
 }
 .content-about {
     font-size: 30px;
-    color: #aa8d4f;
+    color: #aa8d4f !important;
 }
 .text-container p {
     font-size: 16px;
     color: #333;
     line-height: 1.6;
     margin-bottom: 20px;
-    font-style: oblique;
+    font-style: initial;
     font-weight: 600;
 }
 
 .ulist {
     list-style: unset;
-    font-style: oblique;
+    font-style: initial;
     font-weight: 600;
 }
 .team-box {

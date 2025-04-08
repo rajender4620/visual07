@@ -106,6 +106,7 @@
     .fixed-column {
         position: unset;
         width: 100% !important;
+        display: none;
     }
 
     .columnwrap {
@@ -153,6 +154,7 @@
     .fixed-column {
         position: unset;
         width: 100% !important;
+        display: none;
     }
 
     .column-wrap.p-0 {
@@ -200,6 +202,7 @@
     .fixed-column {
         position: unset;
         width: 100% !important;
+        display: none;
     }
 
     .column-wrap.p-0 {
