@@ -150,6 +150,15 @@
             }, 3000);
         });
     </script>
+        <script>
+            const navToggle = document.getElementById('mobile-nav-toggle');
+            const navMenu = document.getElementById('nav-menu');
+        
+            navToggle.addEventListener('click', () => {
+                navToggle.classList.toggle('active');
+                navMenu.classList.toggle('active');
+            });
+        </script>
 </body>
 
 </html>
