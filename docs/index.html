@@ -12,7 +12,7 @@
 </head>
 
 <body class="bacground-sec">
-    <header class="main-header"> 
+    <header class="main-header">
         <div class="header-contacts">
             <ul>
                 <li>
@@ -23,7 +23,7 @@
             </ul>
         </div>
         <a class="logo-holder" href=""><img src="assets/logo_Viky.png" alt=""></a>
-    
+
         <!-- Mobile nav button -->
         <div class="nav-button-wrap">
             <div class="nav-button vis-main-menu" id="mobile-nav-toggle">
@@ -31,7 +31,7 @@
             </div>
         </div>
         <!-- Mobile nav end -->
-    
+
         <!-- Navigation bar -->
         <div class="nav-bar" id="nav-menu">
             <nav>
@@ -57,11 +57,27 @@
 
                         <!-- swiper-slide end-->
                         <!-- swiper-slide-->
+
+                        <div class="swiper-slide">
+                            <img src="assets/bhola_shankar.png" alt="bhola_shankar">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/dev.png" alt="devara">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/pushpa3.png" alt="devara">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/alayan.png" alt="alayaan">
+                            <!-- <div class="thumb-info">
+                                <h3>Pushpa 2 - The Rule</h3>
+                            </div> -->
+                        </div>
                         <div class="swiper-slide">
                             <img src="assets/bhaccha_malli.png" alt="bhaccha_malli">
-                            <!-- <div class="thumb-info">
-                                <h3>Bhaje Vaayu Vegam</h3>
-                            </div> -->
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/Polimera02.png" alt="Polimera02">
                         </div>
 
                         <div class="swiper-slide">
@@ -71,47 +87,16 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <img src="assets/alayan.png" alt="alayaan">
-                            <!-- <div class="thumb-info">
-                                <h3>Pushpa 2 - The Rule</h3>
-                            </div> -->
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="assets/bhola_shankar.png" alt="bhola_shankar">
-                            <div class="thumb-info">
-                                <h3>Lovecraft Country</h3>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="assets/dev.png" alt="devara">
-                            <div class="thumb-info">
-                                <h3>Legacy Monsters</h3>
-                            </div>
+                            <img src="assets/maz.png" alt="Mazaka">
                         </div>
                         <div class="swiper-slide">
                             <img src="assets/leg.png" alt="legally_veer">
-                            <div class="thumb-info">
-                                <h3>Shreekakulam Sherlock Homes</h3>
-                            </div>
                         </div>
-                        <div class="swiper-slide">
-                            <img src="assets/maz.png" alt="Mazaka">
-                            <div class="thumb-info">
-                                <h3>Shreekakulam Sherlock Homes</h3>
-                            </div>
-                        </div>
+
                         <div class="swiper-slide">
                             <img src="assets/Nilave_cheliya.png" alt="Nilave_cheliya">
-                            <div class="thumb-info">
-                                <h3>Shreekakulam Sherlock Homes</h3>
-                            </div>
                         </div>
-                        <div class="swiper-slide">
-                            <img src="assets/Polimera02.png" alt="Polimera02">
-                            <div class="thumb-info">
-                                <h3>Shreekakulam Sherlock Homes</h3>
-                            </div>
-                        </div>
+
                     </div>
                     <div class="swiper-pagination swiper-pagination-bullets"></div>
                     <div class="sw-button swiper-button-next button-arrow"><i class="fa fa-angle-right rightarrow"></i>
@@ -161,7 +146,7 @@
         document.addEventListener("DOMContentLoaded", function () {
             let currentPage = window.location.pathname.split("/").pop(); // Get current page filename
             let menuLinks = document.querySelectorAll(".nav-bar ul li a");
-    
+
             menuLinks.forEach(link => {
                 if (link.getAttribute("href") === currentPage) {
                     link.classList.add("activate"); // Add activate class to the selected page
@@ -172,13 +157,13 @@
     <script>
         const navToggle = document.getElementById('mobile-nav-toggle');
         const navMenu = document.getElementById('nav-menu');
-    
+
         navToggle.addEventListener('click', () => {
             navToggle.classList.toggle('active');
             navMenu.classList.toggle('active');
         });
     </script>
-    
+
 </body>
 
 </html>
